@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+</head>
+<body>
+    
+    <div id="wrapper">
+        
+
+    </div>
+    
+
+    <script>
+    
+        const wrapper = document.getElementById("wrapper")
+        wrapper.style.width ="600px"
+        wrapper.style.height ="600px"
+        wrapper.style.backgroundColor ="grey"
+        wrapper.style.textAlign ="center"
+        
+
+        const childElement = document.createElement("h1")
+        childElement.textContent="Blog Title";
+        wrapper.appendChild(childElement)
+
+
+
+        const childText =document.createElement("p")
+        childText.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ";
+        childText.style.fontSize ="25PX"
+        wrapper.appendChild(childText)
+
+
+        const childButton = document. createElement("button")
+        childButton.textContent ="Read More"
+        childButton.style.width = "130px";
+        childButton.style.height = "30px";
+        childButton.style.backgroundColor ="white"
+        wrapper.appendChild(childButton)
+
+        
+
+       
+        console.log(wrapper);
+    </script>
+    
+</body>
+</html>
